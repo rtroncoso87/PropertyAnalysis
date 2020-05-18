@@ -1,0 +1,9 @@
+C:\Users\carmo\source\repos\PropertyAnalysis\PropertyAnalysisDB\bin\Debug\PropertyAnalysis.dacpac
+C:\Users\carmo\source\repos\PropertyAnalysis\PropertyAnalysisDB\obj\Debug\Model.xml
+C:\Users\carmo\source\repos\PropertyAnalysis\PropertyAnalysisDB\obj\Debug\refactor.xml
+C:\Users\carmo\source\repos\PropertyAnalysis\PropertyAnalysisDB\obj\Debug\postdeploy.sql
+C:\Users\carmo\source\repos\PropertyAnalysis\PropertyAnalysisDB\obj\Debug\predeploy.sql
+C:\Users\carmo\source\repos\PropertyAnalysis\PropertyAnalysisDB\bin\Debug\PropertyAnalysis.dll
+C:\Users\carmo\source\repos\PropertyAnalysis\PropertyAnalysisDB\bin\Debug\PropertyAnalysis.pdb
+C:\Users\carmo\source\repos\PropertyAnalysis\PropertyAnalysisDB\obj\Debug\PropertyAnalysis.dll
+C:\Users\carmo\source\repos\PropertyAnalysis\PropertyAnalysisDB\obj\Debug\PropertyAnalysis.pdb

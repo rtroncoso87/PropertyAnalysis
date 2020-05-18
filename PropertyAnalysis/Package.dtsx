@@ -1,0 +1,80 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/18/2020 5:17:50 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-E2K9DSI"
+  DTS:CreatorName="DESKTOP-E2K9DSI\carmo"
+  DTS:DTSID="{2769F152-8731-42F8-A420-6A4577D454F3}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.71"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{1B210EC4-9CDE-4F8B-A792-FE28A1276806}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[HTTP Connection Manager]"
+      DTS:CreationName="HTTP"
+      DTS:DTSID="{55266B6C-E11A-4BEE-8F45-054BFBCBD1BE}"
+      DTS:ObjectName="HTTP Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="http://prod.publicdata.landregistry.gov.uk.s3-website-eu-west-1.amazonaws.com/pp-monthly-update-new-version.csv">
+          <DTS:HttpConnection
+            DTS:ServerURL="http://prod.publicdata.landregistry.gov.uk.s3-website-eu-west-1.amazonaws.com/pp-monthly-update-new-version.csv">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAC2S95fGHtUq1QPX1cVhGKQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABcyg3ul8kzWtWV6XOrvVjQKaO0UfOVt/DhZEpu3E9GpgAAAAAOgAAAAAIAACAAAABvJCMZ7usbOX+fqlVfyrZtS1dy/YHqBWWtPfdLWyCbcRAAAABQ6GNeXkqxttvEisMew+kkQAAAAMIJpKSuiE+NG9TU2MGBg+XCESyvAjcMDr35/52mTky4XyyP5LXpO6oVEWtCRNT6734hGaUJ9QRIdyau5C8jBz4</DTS:Property>
+            <DTS:Property
+              DTS:Name="ProxyPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAC2S95fGHtUq1QPX1cVhGKQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABUdWNtZuHMe/J8k4i6ZCPuAyAlay42UO9FOc3r5Ax3BgAAAAAOgAAAAAIAACAAAABHUi+ZEzroN5BZUCKC0YFWeBSjxUTNzsf5unQgrnwtcBAAAAC3lIR9KuWehlnVd4AcvN/4QAAAAKmMzk5vXY4fKQG5LyZ2l+Y0BW98Fq43JliuCjUznzE5kOPWKDhncH4ltrvMmv27JU9XpRcVZMQaD8ExzyVCx40</DTS:Property>
+          </DTS:HttpConnection>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F33555A4-03ED-4985-B75E-254B052AD90C}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="317,160" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
